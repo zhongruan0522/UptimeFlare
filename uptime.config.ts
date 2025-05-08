@@ -27,21 +27,35 @@ const workerConfig: WorkerConfig = {
 monitors: [
   {
     id: 'my_website',
-    name: '我的网站',
+    name: '主页',
     method: 'GET',
-    target: 'https://你的域名.com',
+    target: 'https://www.zxiaoruan.cn',
     expectedCodes: [200],
     timeout: 10000,
     tooltip: '主站监控',
-    statusPageLink: 'https://你的域名.com',
+    statusPageLink: 'https://www.zxiaoruan.cn',
+  },
+  {
+    id: 'api_website',
+    name: 'ZAPI',
+    method: 'GET',
+    target: 'https://zapi.zxiaoruan.cn',
+    expectedCodes: [200],
+    timeout: 10000,
+    tooltip: 'ZAPI监控',
+    statusPageLink: 'https://zapi.zxiaoruan.cn',
+  },
+  {
+    id: 'chat_website',
+    name: 'Open-WebUI',
+    method: 'GET',
+    target: 'https://chat.zxiaoruan.cn',
+    expectedCodes: [200],
+    timeout: 10000,
+    tooltip: 'chat监控',
+    statusPageLink: 'https://chat.zxiaoruan.cn',
   }
 ],
-notification: {
-  appriseApiServer: 'https://apprise.example.com/notify',
-  recipientUrl: 'mailto://user:pass@smtp.mailserver.com?to=you@example.com',
-  timeZone: 'Asia/Shanghai',
-  gracePeriod: 5,
-},
   callbacks: {
     onStatusChange: async (
       env: any,
