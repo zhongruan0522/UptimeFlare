@@ -13,8 +13,6 @@ const pageConfig: PageConfig = {
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
-    '🌐 Public (example group name)': ['foo_monitor', 'bar_monitor', 'more monitor ids...'],
-    '🔐 Private': ['test_tcp_monitor'],
   },
 }
 
@@ -54,6 +52,15 @@ monitors: [
     timeout: 10000,
     tooltip: 'chat监控',
     statusPageLink: 'https://chat.zxiaoruan.cn',
+  },{
+    id: 'api2_website',
+    name: 'api2',
+    method: 'GET',
+    target: 'https://wemrltszkrvg.sealosbja.site',
+    expectedCodes: [200],
+    timeout: 10000,
+    tooltip: 'chat监控',
+    statusPageLink: 'https://wemrltszkrvg.sealosbja.site',
   },
 ],
     notification: {
