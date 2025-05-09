@@ -59,7 +59,7 @@ monitors: [
     target: 'https://wemrltszkrvg.sealosbja.site',
     expectedCodes: [200],
     timeout: 10000,
-    tooltip: 'chat监控',
+    tooltip: 'ZAPI2监控',
     statusPageLink: 'https://wemrltszkrvg.sealosbja.site',
   },
 ],
