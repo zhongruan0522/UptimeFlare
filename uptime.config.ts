@@ -69,7 +69,7 @@ monitors: [
     // appriseApiServer: 'https://apprise.example.com/notify',
     // [Optional] recipient URL for apprise, refer to https://github.com/caronc/apprise
     // if not specified, no notification will be sent
-    recipientUrl: 'mailtos://resend:密钥@smtp.resend.com:465?from=status@zxiaoruan.cn',
+    recipientUrl: 'mailtos://resend:re_G1Cqqbdk_KkhgBC6hsR9Doa3gLBMq1Ygv@smtp.resend.com:465?from=status@zxiaoruan.cn',
     // [Optional] timezone used in notification messages, default to "Etc/GMT"
     timeZone: 'Asia/Shanghai',
     // [Optional] grace period in minutes before sending a notification
