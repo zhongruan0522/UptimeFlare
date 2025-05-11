@@ -140,10 +140,10 @@ const maintenances: MaintenanceConfig[] = [
     // Description of the maintenance, will be shown at status page
     body: '以下服务器正在迁移升级中，如有影响请切换至对应的备用服务器',
     // Start time of the maintenance, in UNIX timestamp or ISO 8601 format
-    start: '2025-05-11T00:00:00+08:00',
+    start: '2025-05-11T15:00:00+08:00',
     // [Optional] end time of the maintenance, in UNIX timestamp or ISO 8601 format
     // if not specified, the maintenance will be considered as on-going
-    end: '2025-05-12T00:00:00+08:00',
+    end: '2025-05-12T15:45:00+08:00',
     // [Optional] color of the maintenance alert at status page, default to "yellow"
     color: 'blue',
   },
