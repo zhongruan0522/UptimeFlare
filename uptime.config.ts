@@ -136,9 +136,9 @@ const maintenances: MaintenanceConfig[] = [
     // [Optional] Monitor IDs to be affected by this maintenance
     monitors: ['api_website'],
     // [Optional] default to "Scheduled Maintenance" if not specified
-    title: 'Test Maintenance',
+    title: '服务器迁移升级中',
     // Description of the maintenance, will be shown at status page
-    body: 'This is a test maintenance, server software upgrade',
+    body: '以下服务器正在迁移升级中，如有影响请切换至对应的备用服务器',
     // Start time of the maintenance, in UNIX timestamp or ISO 8601 format
     start: '2025-05-11T00:00:00+08:00',
     // [Optional] end time of the maintenance, in UNIX timestamp or ISO 8601 format
