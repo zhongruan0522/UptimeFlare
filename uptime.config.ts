@@ -54,6 +54,16 @@ monitors: [
     timeout: 10000,
     tooltip: 'chat监控',
     statusPageLink: 'https://chat.zxiaoruan.cn/health',
+  },,
+  {
+    id: 'chat2_website',
+    name: 'Open-WebUI',
+    method: 'GET',
+    target: 'https://zhongruan-openwebui.hf.space/health',
+    expectedCodes: [200],
+    timeout: 10000,
+    tooltip: 'chat2监控',
+    statusPageLink: 'https://zhongruan-openwebui.hf.space/health',
   },{
     id: 'api2_website',
     name: 'ZAPI2',
@@ -156,7 +166,7 @@ const maintenances: MaintenanceConfig[] = [
     title: '服务器迁移',
     body: '以下服务正在进行迁移，部分服务提供备用服务器',
     start: '2025-05-12T14:40:00+08:00',
-    end: '2025-05-22T14:00:00+08:00',
+    end: '2025-05-12T20:00:00+08:00',
     color: 'pink',
   },
 ]
