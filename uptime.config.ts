@@ -54,7 +54,7 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
       tooltip: 'chat监控',
       statusPageLink: 'https://chat.zxiaoruan.cn/health',
-    },,
+    },
     {
       id: 'chat2_website',
       name: 'Open-WebUI',
