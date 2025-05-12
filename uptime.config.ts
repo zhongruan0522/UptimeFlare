@@ -151,6 +151,13 @@ const maintenances: MaintenanceConfig[] = [
     start: '2025-05-12T14:40:00+08:00',
     end: '2025-05-12T15:20:00+08:00',
     color: 'blue',
+  },{
+    monitors: ['my_website','api_website','chat_website','tkapi_website'],
+    title: '服务器迁移',
+    body: '以下服务正在进行迁移，部分服务提供备用服务器',
+    start: '2025-05-12T14:40:00+08:00',
+    end: '2025-05-22T14:00:00+08:00',
+    color: 'pink',
   },
 ]
 
