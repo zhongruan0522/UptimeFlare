@@ -49,11 +49,11 @@ monitors: [
     id: 'chat_website',
     name: 'Open-WebUI',
     method: 'GET',
-    target: 'https://chat.zxiaoruan.cn/health',
+    target: 'http://38.246.237.219:8080/health',
     expectedCodes: [200],
     timeout: 10000,
     tooltip: 'chat监控',
-    statusPageLink: 'https://chat.zxiaoruan.cn/health',
+    statusPageLink: 'http://38.246.237.219:8080/health',
   },{
     id: 'api2_website',
     name: 'ZAPI2',
@@ -146,6 +146,20 @@ const maintenances: MaintenanceConfig[] = [
     end: '2025-05-11T15:45:00+08:00',
     // [Optional] color of the maintenance alert at status page, default to "yellow"
     color: 'blue',
+  }, {
+    // [Optional] Monitor IDs to be affected by this maintenance
+    monitors: ['api_website'],
+    // [Optional] default to "Scheduled Maintenance" if not specified
+    title: '服务器域名崩溃',
+    // Description of the maintenance, will be shown at status page
+    body: '以下服务器正在修复中，如有影响请切换至对应的备用服务器',
+    // Start time of the maintenance, in UNIX timestamp or ISO 8601 format
+    start: '2025-05-12T11:00:00+08:00',
+    // [Optional] end time of the maintenance, in UNIX timestamp or ISO 8601 format
+    // if not specified, the maintenance will be considered as on-going
+    end: '2025-05-12T15:45:00+08:00',
+    // [Optional] color of the maintenance alert at status page, default to "yellow"
+    color: 'red',
   },
 ]
 
