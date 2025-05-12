@@ -49,11 +49,11 @@ monitors: [
     id: 'chat_website',
     name: 'Open-WebUI',
     method: 'GET',
-    target: 'https://chat.zxiaoruan.cn',
+    target: 'https://chat.zxiaoruan.cn/health',
     expectedCodes: [200],
     timeout: 10000,
     tooltip: 'chat监控',
-    statusPageLink: 'https://chat.zxiaoruan.cn',
+    statusPageLink: 'https://chat.zxiaoruan.cn/health',
   },{
     id: 'api2_website',
     name: 'ZAPI2',
