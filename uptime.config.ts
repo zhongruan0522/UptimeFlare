@@ -148,7 +148,7 @@ const maintenances: MaintenanceConfig[] = [
     color: 'blue',
   }, {
     // [Optional] Monitor IDs to be affected by this maintenance
-    monitors: ['api_website'],
+    monitors: ['chat_website'],
     // [Optional] default to "Scheduled Maintenance" if not specified
     title: '服务器域名崩溃',
     // Description of the maintenance, will be shown at status page
