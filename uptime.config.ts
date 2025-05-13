@@ -65,15 +65,6 @@ const workerConfig: WorkerConfig = {
       tooltip: 'chat2监控',
       statusPageLink: 'https://zhongruan-openwebui.hf.space/health',
     },{
-      id: 'api2_website',
-      name: 'ZAPI2',
-      method: 'GET',
-      target: 'https://wemrltszkrvg.sealosbja.site',
-      expectedCodes: [200],
-      timeout: 10000,
-      tooltip: 'ZAPI2监控',
-      statusPageLink: 'https://wemrltszkrvg.sealosbja.site',
-    },{
       id: 'tkapi_website',
       name: 'tkapi',
       method: 'GET',
