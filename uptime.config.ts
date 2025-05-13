@@ -85,20 +85,6 @@ const workerConfig: WorkerConfig = {
     },
   ],
     notification: {
-    // [Optional] apprise API server URL
-    // if not specified, no notification will be sent
-    // appriseApiServer: 'https://apprise.example.com/notify',
-    // [Optional] recipient URL for apprise, refer to https://github.com/caronc/apprise
-    // if not specified, no notification will be sent
-    recipientUrl: 'mailtos://resend:re_G1Cqqbdk_KkhgBC6hsR9Doa3gLBMq1Ygv@smtp.resend.com:465?from=status@zxiaoruan.cn',
-    // [Optional] timezone used in notification messages, default to "Etc/GMT"
-    timeZone: 'Asia/Shanghai',
-    // [Optional] grace period in minutes before sending a notification
-    // notification will be sent only if the monitor is down for N continuous checks after the initial failure
-    // if not specified, notification will be sent immediately
-    gracePeriod: 5,
-    // [Optional] disable notification for monitors with specified ids
-    skipNotificationIds: ['foo_monitor', 'bar_monitor'],
   },
   callbacks: {
     onStatusChange: async (
@@ -109,10 +95,6 @@ const workerConfig: WorkerConfig = {
       timeNow: number,
       reason: string
     ) => {
-      // This callback will be called when there's a status change for any monitor
-      // Write any Typescript code here
-      // This will not follow the grace period settings and will be called immediately when the status changes
-      // You need to handle the grace period manually if you want to implement it
     },
     onIncident: async (
       env: any,
@@ -121,17 +103,9 @@ const workerConfig: WorkerConfig = {
       timeNow: number,
       reason: string
     ) => {
-      // This callback will be called EVERY 1 MINTUE if there's an on-going incident for any monitor
-      // Write any Typescript code here
     },
   },
 }
-
-// You can define multiple maintenances here
-// During maintenance, an alert will be shown at status page
-// Also, related downtime notifications will be skipped (if any)
-// Of course, you can leave it empty if you don't need this feature
-// const maintenances: MaintenanceConfig[] = []
 const maintenances: MaintenanceConfig[] = [
   {
     // [Optional] Monitor IDs to be affected by this maintenance
@@ -147,29 +121,13 @@ const maintenances: MaintenanceConfig[] = [
     end: '2025-05-11T15:45:00+08:00',
     // [Optional] color of the maintenance alert at status page, default to "yellow"
     color: 'blue',
-  }, {
-    monitors: ['chat_website'],
-    title: '服务器域名崩溃',
-    body: '以下服务器正在修复中，如有影响请切换至对应的备用服务器',
-    start: '2025-05-12T11:00:00+08:00',
-    end: '2025-05-12T15:45:00+08:00',
-    color: 'red',
-  },{
-    monitors: ['my_website','api_website','chat_website','tkapi_website'],
-    title: '服务器数据备份',
-    body: '以下服务正在进行冷备份，部分服务提供备用服务器',
-    start: '2025-05-12T14:40:00+08:00',
-    end: '2025-05-12T15:20:00+08:00',
-    color: 'blue',
   },{
     monitors: ['my_website','chat_website','tkapi_website'],
     title: '服务器迁移',
     body: '以下服务正在进行迁移，部分服务提供备用服务器',
-    start: '2025-05-12T14:40:00+08:00',
-    end: '2025-05-12T20:00:00+08:00',
-    color: 'pink',
+    start: '2025-05-17T08:00:00+08:00',
+    end: '2025-05-17T22:00:00+08:00',
+    color: 'yellow',
   },
 ]
-
-// Don't forget this, otherwise compilation fails.
 export { pageConfig, workerConfig, maintenances }
