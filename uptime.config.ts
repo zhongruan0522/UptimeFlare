@@ -14,7 +14,7 @@ const pageConfig: PageConfig = {
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
     '主站基础服务': ['my_website', 'chat_website','chat2_website'],
-    'API服务': ['api_website', 'api2_website', 'tkapi_website'],
+    'API服务': ['api_website', 'tkapi_website'],
   },
 }
 
