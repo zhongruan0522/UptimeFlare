@@ -14,7 +14,7 @@ const pageConfig: PageConfig = {
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
     '主站基础服务': ['my_website', 'chat_website','chat2_website'],
-    'API服务': ['api_website','api2_website','tkapi_website'],
+    'API服务': ['api_website','tkapi_website'],
   },
 }
 
@@ -46,33 +46,13 @@ const workerConfig: WorkerConfig = {
       statusPageLink: 'https://zapi.zxiaoruan.cn',
     },
     {
-      id: 'api2_website',
-      name: 'ZAPI2',
-      method: 'GET',
-      target: 'https://zhongruan-voapi.hf.space',
-      expectedCodes: [200],
-      timeout: 10000,
-      tooltip: 'ZAPI2监控',
-      statusPageLink: 'https://zhongruan-voapi.hf.space',
-    },
-    {
       id: 'chat_website',
       name: 'Open-WebUI',
-      method: 'GET',
-      target: 'https://chat.zxiaoruan.cn/health',
-      expectedCodes: [200],
-      timeout: 10000,
-      tooltip: 'chat监控',
-      statusPageLink: 'https://chat.zxiaoruan.cn/health',
-    },
-    {
-      id: 'chat2_website',
-      name: 'Open-WebUI2',
       method: 'GET',
       target: 'https://zhongruan-openwebui.hf.space/health',
       expectedCodes: [200],
       timeout: 10000,
-      tooltip: 'chat2监控',
+      tooltip: 'chat监控',
       statusPageLink: 'https://zhongruan-openwebui.hf.space/health',
     },{
       id: 'tkapi_website',
