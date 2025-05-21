@@ -46,6 +46,16 @@ const workerConfig: WorkerConfig = {
       statusPageLink: 'https://zapi.zxiaoruan.cn',
     },
     {
+      id: 'api2_website',
+      name: 'ZAPI2',
+      method: 'GET',
+      target: 'https://zhongruan-voapi.hf.space',
+      expectedCodes: [200],
+      timeout: 10000,
+      tooltip: 'ZAPI2监控',
+      statusPageLink: 'https://zhongruan-voapi.hf.space',
+    },
+    {
       id: 'chat_website',
       name: 'Open-WebUI',
       method: 'GET',
@@ -57,7 +67,7 @@ const workerConfig: WorkerConfig = {
     },
     {
       id: 'chat2_website',
-      name: 'Open-WebUI',
+      name: 'Open-WebUI2',
       method: 'GET',
       target: 'https://zhongruan-openwebui.hf.space/health',
       expectedCodes: [200],
