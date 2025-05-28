@@ -41,15 +41,6 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
       tooltip: 'chat监控',
       statusPageLink: 'https://zhongruan-openwebui.hf.space/health',
-    },{
-      id: 'tkapi_website',
-      name: 'tkapi',
-      method: 'GET',
-      target: 'https://tk.zxiaoruan.cn',
-      expectedCodes: [200],
-      timeout: 10000,
-      tooltip: 'TokenAPI监控',
-      statusPageLink: 'https://tk.zxiaoruan.cn',
     },
   ],
     notification: {
