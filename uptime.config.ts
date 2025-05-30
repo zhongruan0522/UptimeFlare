@@ -10,7 +10,7 @@ const pageConfig: PageConfig = {
   },
 }
 const workerConfig: WorkerConfig = {
-  kvWriteCooldownMinutes: 10,
+  kvWriteCooldownMinutes: 60,
   monitors: [
     {
       id: 'my_website',
