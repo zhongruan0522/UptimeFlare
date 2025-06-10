@@ -76,11 +76,11 @@ const workerConfig: WorkerConfig = {
 }
 const maintenances: MaintenanceConfig[] = [
   {
-    monitors: ['api_website'],
-    title: '服务器迁移升级中',
-    body: '以下服务器正在迁移升级中，如有影响请切换至对应的备用服务器',
-    start: '2025-05-11T15:00:00+08:00',
-    end: '2025-05-11T15:45:00+08:00',
+    monitors: ['my_website','tkapi_website'],
+    title: '服务异常',
+    body: '以下服务器正在恢复，如有影响请切换至对应的备用服务器',
+    start: '2025-06-10T00:00:00+08:00',
+    end: '2025-06-10T23:59:59+08:00',
     color: 'blue',
   },
 ]
