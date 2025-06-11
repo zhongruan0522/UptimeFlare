@@ -26,7 +26,7 @@ const workerConfig: WorkerConfig = {
       id: 'api_website',
       name: 'ZAPI',
       method: 'GET',
-      target: 'https://zapi.zxiaoruan.cn',
+      target: 'https://zhongruan-vo.hf.space',
       expectedCodes: [200],
       timeout: 10000,
       tooltip: 'ZAPI监控',
