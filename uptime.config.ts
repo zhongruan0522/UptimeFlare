@@ -12,16 +12,7 @@ const pageConfig: PageConfig = {
 const workerConfig: WorkerConfig = {
   kvWriteCooldownMinutes: 60,
   monitors: [
-    {
-      id: 'my_website',
-      name: '主页',
-      method: 'GET',
-      target: 'https://www.zxiaoruan.cn',
-      expectedCodes: [200],
-      timeout: 10000,
-      tooltip: '主站监控',
-      statusPageLink: 'https://www.zxiaoruan.cn',
-    },
+   
     {
       id: 'api_website',
       name: 'ZAPI',
@@ -41,15 +32,6 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
       tooltip: 'chat监控',
       statusPageLink: 'https://zhongruan-openwebui.hf.space/health',
-    },{
-      id: 'tkapi_website',
-      name: 'TKAPI',
-      method: 'GET',
-      target: 'https://tk.zxiaoruan.cn',
-      expectedCodes: [200],
-      timeout: 10000,
-      tooltip: 'TK API',
-      statusPageLink: 'https://tk.zxiaoruan.cn',
     },
   ],
     notification: {
