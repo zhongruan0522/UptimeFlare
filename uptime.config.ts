@@ -6,7 +6,7 @@ const pageConfig: PageConfig = {
     { link: 'mailto:zhongruan@zxiaoruan.cn', label: 'Email Me', highlight: true },
   ],
   group: {
-    '检查服务': ['chat_website''api_website'],
+    '检查服务': ['chat_website','api_website'],
   },
 }
 const workerConfig: WorkerConfig = {
