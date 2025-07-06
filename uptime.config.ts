@@ -33,6 +33,16 @@ const workerConfig: WorkerConfig = {
       tooltip: 'chat监控',
       statusPageLink: 'https://zhongruan-openwebui.hf.space',
     },
+        {
+      id: 'www_website',
+      name: 'WWW',
+      method: 'GET',
+      target: 'https://www.zxiaoruan.cn/',
+      expectedCodes: [200],
+      timeout: 10000,
+      tooltip: 'WWWW监控',
+      statusPageLink: 'https://www.zxiaoruan.cn/',
+    },
   ],
     notification: {
   },
