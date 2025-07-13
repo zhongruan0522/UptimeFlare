@@ -14,24 +14,24 @@ const workerConfig: WorkerConfig = {
   monitors: [
    
     {
-      id: 'api_website',
+      id: 'API',
       name: 'ZAPI',
       method: 'GET',
-      target: 'https://zhongruan-vo.hf.space',
+      target: 'https://api.zxiaoruan.cn/',
       expectedCodes: [200],
       timeout: 10000,
       tooltip: 'ZAPI监控',
-      statusPageLink: 'https://zhongruan-vo.hf.space',
+      statusPageLink: 'https://api.zxiaoruan.cn/',
     },
     {
-      id: 'chat_website',
+      id: 'Open-WebUI',
       name: 'Open-WebUI',
       method: 'GET',
-      target: 'https://zhongruan-openwebui.hf.space',
+      target: 'https://chat.zxiaoruan.cn/',
       expectedCodes: [200],
       timeout: 10000,
       tooltip: 'chat监控',
-      statusPageLink: 'https://zhongruan-openwebui.hf.space',
+      statusPageLink: 'https://chat.zxiaoruan.cn/',
     },
         {
       id: 'www_website',
