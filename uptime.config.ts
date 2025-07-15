@@ -73,13 +73,6 @@ const maintenances: MaintenanceConfig[] = [  {
     start: '2025-07-15T09:00:00+08:00',
     end: '2025-07-15T10:00:00+08:00',
     color: 'red',
-  },{
-    monitors: ['www_website'],
-    title: '服务迁移',
-    body: '服务迁移',
-    start: '2025-07-15T14:00:00+08:00',
-    end: '2025-07-15T16:00:00+08:00',
-    color: 'red',
-  },
+  }
 ]
 export { pageConfig, workerConfig, maintenances }
