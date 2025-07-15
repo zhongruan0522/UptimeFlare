@@ -7,7 +7,6 @@ const pageConfig: PageConfig = {
   ],
   group: {
     '主服务': ['www_website','Open-WebUI','API'],
-    '服务器': ['vps','Open-WebUI','API'],
   },
 }
 const workerConfig: WorkerConfig = {
