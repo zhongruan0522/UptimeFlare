@@ -44,27 +44,8 @@ const workerConfig: WorkerConfig = {
       tooltip: 'WWWW监控',
       statusPageLink: 'https://www.zxiaoruan.cn/',
     },
-        {
-      id: 'vps',
-      name: 'vps',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
-      // `target` should be `host:port` for tcp monitors
-      target: '154.201.91.61',
-      tooltip: 'vps',
-      statusPageLink: '',
-      timeout: 5000,
-    },
   ],
   notification: {
-    appriseApiServer: "apprise.zxiaoruan.cn/notify",
-    recipientUrl: "mailtos://admin@zxiaoruan.cn:re_G1Cqqbdk_KkhgBC6hsR9Doa3gLBMq1Ygv@zxiaoruan.cn:465?smtp=smtp.resend.com&user=resend&from=admin@zxiaoruan.cn&to=2218348498@qq.com&mode=ssl",
-    // [Optional] timezone used in notification messages, default to "Etc/GMT"
-    timeZone: "Asia/Shanghai",
-    // [Optional] grace period in minutes before sending a notification
-    // notification will be sent only if the monitor is down for N continuous checks after the initial failure
-    // if not specified, notification will be sent immediately
-    gracePeriod: 5,
   },
   callbacks: {
     onStatusChange: async (
