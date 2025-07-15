@@ -74,7 +74,7 @@ const maintenances: MaintenanceConfig[] = [  {
 
     body: '部分服务正在升级系统',
 
-    start: '2025-07-15T9:00:00+08:00',
+    start: '2025-07-15T09:00:00+08:00',
 
     end: '2025-07-15T10:00:00+08:00',
 
