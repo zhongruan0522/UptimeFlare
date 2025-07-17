@@ -6,13 +6,34 @@ const pageConfig: PageConfig = {
     { link: 'mailto:zhongruan@zxiaoruan.cn', label: 'Email Me', highlight: true },
   ],
   group: {
-    '主服务': ['www_website','Open-WebUI','API'],
+    '服务器': ['www_website','vps2'],
+    '公益应用': ['gyapi'],
+    '应用': ['Open-WebUI','API'],
   },
 }
 const workerConfig: WorkerConfig = {
   kvWriteCooldownMinutes: 60,
   monitors: [
-   
+      {
+      id: 'gyapi',
+      name: 'gyapi',
+      method: 'GET',
+      target: 'https://api.zhongruanapi.dpdns.org/',
+      expectedCodes: [200],
+      timeout: 10000,
+      tooltip: '公益API站',
+      statusPageLink: 'https://api.zhongruanapi.dpdns.org/',
+     },
+     {
+      id: 'vps2',
+      name: 'vps2',
+      method: 'GET',
+      target: 'https://zhongruanapi.dpdns.org/',
+      expectedCodes: [200],
+      timeout: 10000,
+      tooltip: '2+4-服务器香港-7元',
+      statusPageLink: 'https://zhongruanapi.dpdns.org/',
+    },
     {
       id: 'API',
       name: 'ZAPI',
@@ -33,14 +54,14 @@ const workerConfig: WorkerConfig = {
       tooltip: 'chat监控',
       statusPageLink: 'https://chat.zxiaoruan.cn/',
     },
-        {
+    {
       id: 'www_website',
       name: 'WWW',
       method: 'GET',
       target: 'https://www.zxiaoruan.cn/',
       expectedCodes: [200],
       timeout: 10000,
-      tooltip: 'WWWW监控',
+      tooltip: '4+4-服务器美国-30元',
       statusPageLink: 'https://www.zxiaoruan.cn/',
     },
   ],
