@@ -6,7 +6,7 @@ const pageConfig: PageConfig = {
     { link: 'mailto:zhongruan@zxiaoruan.cn', label: 'Email Me', highlight: true },
   ],
   group: {
-    '服务器': ['www_website','vps2'],
+    '服务器': ['www_website','vps'],
     '公益应用': ['gyapi'],
     '应用': ['Open-WebUI','API'],
   },
@@ -25,8 +25,8 @@ const workerConfig: WorkerConfig = {
       statusPageLink: 'https://api.zhongruanapi.dpdns.org/',
      },
      {
-      id: 'vps2',
-      name: 'vps2',
+      id: 'vps',
+      name: 'vps',
       method: 'GET',
       target: 'https://zhongruanapi.dpdns.org/',
       expectedCodes: [200],
