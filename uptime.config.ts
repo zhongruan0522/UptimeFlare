@@ -16,7 +16,7 @@ const workerConfig: WorkerConfig = {
   monitors: [
       {
       id: 'gyapi',
-      name: 'gyapi',
+      name: '公益API站',
       method: 'GET',
       target: 'https://api.zhongruanapi.dpdns.org/',
       expectedCodes: [403],
@@ -26,7 +26,7 @@ const workerConfig: WorkerConfig = {
      },
      {
       id: 'vps',
-      name: 'vps',
+      name: '2+4-服务器香港-7元',
       method: 'GET',
       target: 'https://zhongruanapi.dpdns.org/',
       expectedCodes: [403],
@@ -56,7 +56,7 @@ const workerConfig: WorkerConfig = {
     },
     {
       id: 'www_website',
-      name: 'WWW',
+      name: '4+4-服务器美国-30元',
       method: 'GET',
       target: 'https://www.zxiaoruan.cn/',
       expectedCodes: [200],
