@@ -39,7 +39,7 @@ const workerConfig: WorkerConfig = {
       name: '2+2-服务器美国-2元',
       method: 'GET',
       target: 'https://vps2.zxiaoruan.cn/',
-      expectedCodes: [403],
+      expectedCodes: [200],
       timeout: 10000,
       tooltip: '2+4-服务器香港-7元',
       statusPageLink: 'https://vps2.zxiaoruan.cn/',
