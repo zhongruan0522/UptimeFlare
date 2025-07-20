@@ -6,7 +6,7 @@ const pageConfig: PageConfig = {
     { link: 'mailto:zhongruan@zxiaoruan.cn', label: 'Email Me', highlight: true },
   ],
   group: {
-    '服务器': ['www_website','vps'],
+    '服务器': ['www_website','vps_two','vps_three'],
     '公益应用': ['gyapi'],
     '应用': ['Open-WebUI','API'],
   },
@@ -25,7 +25,7 @@ const workerConfig: WorkerConfig = {
       statusPageLink: 'https://api.zhongruanapi.dpdns.org/',
      },
      {
-      id: 'vps',
+      id: 'vps_two',
       name: '2+4-服务器香港-7元',
       method: 'GET',
       target: 'https://zhongruanapi.dpdns.org/',
@@ -33,6 +33,16 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
       tooltip: '2+4-服务器香港-7元',
       statusPageLink: 'https://zhongruanapi.dpdns.org/',
+    },
+     {
+      id: 'vps_three',
+      name: '2+2-服务器美国-2元',
+      method: 'GET',
+      target: 'https://vps2.zxiaoruan.cn/',
+      expectedCodes: [403],
+      timeout: 10000,
+      tooltip: '2+4-服务器香港-7元',
+      statusPageLink: 'https://vps2.zxiaoruan.cn/',
     },
     {
       id: 'API',
