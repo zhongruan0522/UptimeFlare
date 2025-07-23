@@ -98,11 +98,11 @@ const workerConfig: WorkerConfig = {
   },
 }
 const maintenances: MaintenanceConfig[] = [  {
-    monitors: ['Open-WebUI'],
-    title: '升级中',
-    body: '部分服务正在升级系统',
-    start: '2025-07-15T09:00:00+08:00',
-    end: '2025-07-15T10:00:00+08:00',
+    monitors: ['vps_three'],
+    title: '服务器异常',
+    body: '等待云服务商反馈数据，影响到的容器：Gemini轮询',
+    start: '2025-07-23T14:20:00+08:00',
+    end: '2025-07-23T23:59:59+08:00',
     color: 'red',
   }
 ]
