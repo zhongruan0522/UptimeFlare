@@ -42,7 +42,7 @@ const workerConfig: WorkerConfig = {
       expectedCodes: [200],
       timeout: 10000,
       tooltip: '1+0.5-服务器美国-9.9元',
-      statusPageLink: 'https://vwt.zxiaoruan.cn/',
+      statusPageLink: 'https://zxiaoruan.cn/',
     },
      {
       id: 'vps_three',
