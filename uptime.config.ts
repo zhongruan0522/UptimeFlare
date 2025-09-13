@@ -6,34 +6,13 @@ const pageConfig: PageConfig = {
     { link: 'mailto:zhongruan@zxiaoruan.cn', label: 'Email Me', highlight: true },
   ],
   group: {
-    '服务器': ['www_website','vps_two','vps_three','vps_four'],
-    '公益应用': ['gyapi'],
+    '服务器': ['www_website','vps_three','vps_four'],
     '应用': ['Open-WebUI','API'],
   },
 }
 const workerConfig: WorkerConfig = {
   kvWriteCooldownMinutes: 60,
   monitors: [
-      {
-      id: 'gyapi',
-      name: '公益API站',
-      method: 'GET',
-      target: 'https://gyapi.zxiaoruan.cn/',
-      expectedCodes: [200],
-      timeout: 10000,
-      tooltip: '公益API站',
-      statusPageLink: 'https://gyapi.zxiaoruan.cn/',
-     },
-     {
-      id: 'vps_two',
-      name: '2+4-服务器香港-7元',
-      method: 'GET',
-      target: 'https://vps3.zxiaoruan.cn/',
-      expectedCodes: [200],
-      timeout: 10000,
-      tooltip: '2+4-服务器香港-7元',
-      statusPageLink: 'https://vps3.zxiaoruan.cn/',
-    },
          {
       id: 'vps_four',
       name: '1+0.5-服务器美国-9.9元',
