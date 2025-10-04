@@ -7,7 +7,7 @@ const pageConfig: PageConfig = {
   ],
   group: {
     '服务器': ['www_website','vps_three','vps_four'],
-    '应用': ['Open-WebUI','API'],
+    '应用': ['API'],
   },
 }
 const workerConfig: WorkerConfig = {
@@ -42,16 +42,6 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
       tooltip: 'ZAPI监控',
       statusPageLink: 'https://api.zxiaoruan.cn/',
-    },
-    {
-      id: 'Open-WebUI',
-      name: 'Open-WebUI',
-      method: 'GET',
-      target: 'https://chat.zxiaoruan.cn/',
-      expectedCodes: [200],
-      timeout: 10000,
-      tooltip: 'chat监控',
-      statusPageLink: 'https://chat.zxiaoruan.cn/',
     },
     {
       id: 'www_website',
