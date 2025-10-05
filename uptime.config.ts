@@ -32,6 +32,15 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
       tooltip: '2+4-服务器香港-7元',
       statusPageLink: 'https://vps2.zxiaoruan.cn/',
+    },    {
+      id: 'GYAPI',
+      name: '公益',
+      method: 'GET',
+      target: 'https://api.aioec.tech/',
+      expectedCodes: [200],
+      timeout: 10000,
+      tooltip: '公益API监控',
+      statusPageLink: 'https://api.aioec.tech/',
     },
     {
       id: 'API',
