@@ -11,7 +11,7 @@ const pageConfig: PageConfig = {
   },
 }
 const workerConfig: WorkerConfig = {
-  kvWriteCooldownMinutes: 60,
+  kvWriteCooldownMinutes: 10,
   monitors: [
          {
       id: 'vps_four',
