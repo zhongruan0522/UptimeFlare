@@ -7,7 +7,7 @@ const pageConfig: PageConfig = {
   ],
   group: {
     '服务器': ['www_website','vps_three','vps_four'],
-    '应用': ['API'],
+    '应用': ['GYAPI','API'],
   },
 }
 const workerConfig: WorkerConfig = {
