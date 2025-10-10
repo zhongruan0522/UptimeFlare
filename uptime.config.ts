@@ -86,11 +86,11 @@ const workerConfig: WorkerConfig = {
   },
 }
 const maintenances: MaintenanceConfig[] = [  {
-    monitors: ['Open-WebUI'],
-    title: '系统更新',
-    body: '测试新服务，停机约4小时',
-    start: '2025-07-30T20:59:00+08:00',
-    end: '2025-07-30T23:59:59+08:00',
+    monitors: ['GYAPI'],
+    title: '系统维护',
+    body: '预计6小时',
+    start: '2025-10-10T09:59:00+08:00',
+    end: '2025-10-10T16:59:59+08:00',
     color: 'red',
   }
 ]
