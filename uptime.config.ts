@@ -36,11 +36,11 @@ const workerConfig: WorkerConfig = {
       id: 'GYAPI',
       name: '公益',
       method: 'GET',
-      target: 'https://api.aioec.tech/',
+      target: 'https://gyapi.zxiaoruan.cn/',
       expectedCodes: [200],
       timeout: 10000,
       tooltip: '公益API监控',
-      statusPageLink: 'https://api.aioec.tech/',
+      statusPageLink: 'https://gyapi.zxiaoruan.cn/',
     },
     {
       id: 'API',
