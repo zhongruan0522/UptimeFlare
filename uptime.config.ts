@@ -7,7 +7,7 @@ const pageConfig: PageConfig = {
   ],
   group: {
     '服务器': ['www_website','vps_three','vps_four'],
-    '应用': ['GYAPI','API'],
+    '应用': ['CRS','API'],
   },
 }
 const workerConfig: WorkerConfig = {
@@ -33,14 +33,14 @@ const workerConfig: WorkerConfig = {
       tooltip: '2+4-服务器香港-7元',
       statusPageLink: 'https://vps2.zxiaoruan.cn/',
     },    {
-      id: 'GYAPI',
-      name: '公益',
+      id: 'CRS',
+      name: 'CRS',
       method: 'GET',
-      target: 'https://gyapi.zxiaoruan.cn/',
+      target: 'https://crs.zxiaoruan.cn/',
       expectedCodes: [200],
       timeout: 10000,
       tooltip: '公益API监控',
-      statusPageLink: 'https://gyapi.zxiaoruan.cn/',
+      statusPageLink: 'https://crs.zxiaoruan.cn/',
     },
     {
       id: 'API',
