@@ -7,7 +7,7 @@ const pageConfig: PageConfig = {
   ],
   group: {
     '服务器': ['www_website','vps_three','vps_four'],
-    '应用': ['CRS','API'],
+    '2API': ['CRS','GCI'],'应用': ['API'],
   },
 }
 const workerConfig: WorkerConfig = {
@@ -32,6 +32,15 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
       tooltip: '2+4-服务器香港-7元',
       statusPageLink: 'https://vps2.zxiaoruan.cn/',
+    },{
+      id: 'GCI',
+      name: 'GCI',
+      method: 'GET',
+      target: 'https://gemini.zxiaoruan.cn/',
+      expectedCodes: [200],
+      timeout: 10000,
+      tooltip: 'GCI监控',
+      statusPageLink: 'https://gemini.zxiaoruan.cn/',
     },    {
       id: 'CRS',
       name: 'CRS',
@@ -39,7 +48,7 @@ const workerConfig: WorkerConfig = {
       target: 'https://crs.zxiaoruan.cn/',
       expectedCodes: [200],
       timeout: 10000,
-      tooltip: '公益API监控',
+      tooltip: 'CRS监控',
       statusPageLink: 'https://crs.zxiaoruan.cn/',
     },
     {
