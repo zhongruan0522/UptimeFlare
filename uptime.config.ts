@@ -7,7 +7,7 @@ const pageConfig: PageConfig = {
   ],
   group: {
     '服务器': ['www_website','vps_three','vps_four'],
-    '2API': ['AN','GCI'],'应用': ['THAIAPI','API'],
+    '2API': [],'应用': ['THAIAPI','API'],
   },
 }
 const workerConfig: WorkerConfig = {
@@ -32,24 +32,6 @@ const workerConfig: WorkerConfig = {
       timeout: 10000,
       tooltip: '2+4-服务器香港-7元',
       statusPageLink: 'https://vps2.zxiaoruan.cn/',
-    },{
-      id: 'GCI',
-      name: 'GCI',
-      method: 'GET',
-      target: 'https://gemini.zxiaoruan.cn/',
-      expectedCodes: [200],
-      timeout: 10000,
-      tooltip: 'GCI监控',
-      statusPageLink: 'https://gemini.zxiaoruan.cn/',
-    },    {
-      id: 'AN',
-      name: 'AN',
-      method: 'GET',
-      target: 'https://antigravity.zxiaoruan.cn/healthz',
-      expectedCodes: [200],
-      timeout: 10000,
-      tooltip: 'CRS监控',
-      statusPageLink: 'https://antigravity.zxiaoruan.cn/healthz',
     },{
       id: 'THAIAPI',
       name: 'THAIAPI',
